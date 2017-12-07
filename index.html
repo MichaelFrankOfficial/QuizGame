@@ -12,23 +12,24 @@
 
 <body>
     <main>
-        <div>
-            <form id="teamEntry">
-                <fieldset>
-                    <legend>Quiz Game</legend>
-                    <div>
-                        <div class="row">
-                            <div class="form-group mb-2">
-                                <input class="form-control" type="text" id="teamOne" autofocus="true" placeholder="Enter Team Name #1">
-                            </div>
-                            <div class="form-group mb-2">
-                                <input class="form-control" type="text" id="teamTwo" autofocus="true" placeholder="Enter Team Name #2">
-                            </div>
-                            <button class="btn btn-dark" type="button" id="btnStartGame">Start Game</button>
+        <h1>The Super Duper Quiz Game!</h1>
+        <form id="teamEntry">
+            <fieldset>
+                <legend>Quiz Game</legend>
+                <div>
+                    <div class="row">
+                        <div class="form-group mb-2">
+                            <input class="form-control" type="text" id="teamOne" autofocus="true" placeholder="Enter Team Name #1">
                         </div>
+                        <div class="form-group mb-2">
+                            <input class="form-control" type="text" id="teamTwo" autofocus="true" placeholder="Enter Team Name #2">
+                        </div>
+                        <button class="btn btn-dark" type="button" id="btnStartGame">Start Game</button>
                     </div>
-                </fieldset>
-            </form>
+                </div>
+            </fieldset>
+        </form>
+        <section id="gameSection" class="d-none">
             <div class="row">
                 <div class="col">
                     <h2 id="teamOneScore">Team One Score : 0</h2>
@@ -44,15 +45,21 @@
                 <div class="col">
                     <button class="btn btn-dark" type="button" id="btnAwardPoints">Award Points</button>
                 </div>
+                <div class="col">
+                        <button class="btn btn-dark" type="button" id="btnSwitchTeam">Switch Team</button>
+                    </div>
+                <div class="col">
+                        <button class="btn btn-dark" type="button" id="btnStartOver">Start Over</button>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-block">
-                <h4 class="card-title" id="questionTeamName">Quiz Game!</h4>
-                <h6 class="card-subtitle mb-2 text-muted" id="questionNumber"></h6>
-                <p class="card-text" id="questionInfo"></p>
+            <div class="card">
+                <div class="card-block">
+                    <h4 class="card-title" id="questionTeamName">Quiz Game!</h4>
+                    <h6 class="card-subtitle mb-2 text-muted" id="questionNumber"></h6>
+                    <p class="card-text" id="questionInfo"></p>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 <script src="quiz.js"></script>
