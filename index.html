@@ -11,52 +11,52 @@
 </head>
 
 <body>
-    <main>
-        <h1>The Super Duper Quiz Game!</h1>
-        <form id="teamEntry">
-            <fieldset>
-                <legend>Quiz Game</legend>
-                <div>
-                    <div class="row">
-                        <div class="form-group mb-2">
-                            <input class="form-control" type="text" id="teamOne" autofocus="true" placeholder="Enter Team Name #1">
-                        </div>
-                        <div class="form-group mb-2">
-                            <input class="form-control" type="text" id="teamTwo" autofocus="true" placeholder="Enter Team Name #2">
-                        </div>
-                        <button class="btn btn-dark" type="button" id="btnStartGame">Start Game</button>
-                    </div>
+    <main class="container-fuid align-content-center">
+        <h1 class="text-center">The Super Duper Quiz Game!</h1>
+        <form class="max-width-100 mx-auto" id="teamEntry">
+
+            <div class="row mt-3">
+                <div class="form-group mb-2 offset-md-3 width-100 col-md-2 p-0">
+                    <input class="form-control" type="text" id="teamOne" autofocus="true" placeholder="Enter Team Name #1">
                 </div>
-            </fieldset>
+                <div class="form-group mb-2 width-100 col-2 p-0">
+                    <input class="form-control" type="text" id="teamTwo" autofocus="true" placeholder="Enter Team Name #2">
+                </div>
+                <button class="btn btn-dark width-100 col-2 p-0" type="button" id="btnStartGame">Start Game</button>
+            </div>
+
+
         </form>
         <section id="gameSection" class="d-none">
             <div class="row">
-                <div class="col">
-                    <h2 id="teamOneScore">Team One Score : 0</h2>
+                <div class="offset-md-1 col-md-4 p-0">
+                    <h2 class="" id="teamOneScore">Team One Score : 0</h2>
                 </div>
-                <div class="col">
-                    <h2 id="teamTwoScore">Team Two Score : 0</h2>
+                <div class="offset-md-3 col-md-4 p-0">
+                    <h2 class="" id="teamTwoScore">Team Two Score : 0</h2>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="offset-md-2 col-md-2">
+                    <button class="btn btn-dark" type="button" id="btnNextQuestion">Next Question</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-dark" type="button" id="btnAwardPoints">Award Points</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-dark" type="button" id="btnSwitchTeam">Switch Team</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-dark" type="button" id="btnStartOver">Start Over</button>
                 </div>
             </div>
             <div class="row">
-                <div class="col">
-                    <button class="btn btn-dark" type="button" id="btnNextQuestion">Next Question</button>
-                </div>
-                <div class="col">
-                    <button class="btn btn-dark" type="button" id="btnAwardPoints">Award Points</button>
-                </div>
-                <div class="col">
-                        <button class="btn btn-dark" type="button" id="btnSwitchTeam">Switch Team</button>
+                <div class="card mt-2 offset-md-1 col-md-10 mt-4">
+                    <div class="card-block p-2">
+                        <h4 class="card-title" id="questionTeamName">Quiz Game!</h4>
+                        <h6 class="card-subtitle mb-2 text-muted" id="questionNumber"></h6>
+                        <p class="card-text" id="questionInfo"></p>
                     </div>
-                <div class="col">
-                        <button class="btn btn-dark" type="button" id="btnStartOver">Start Over</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-block">
-                    <h4 class="card-title" id="questionTeamName">Quiz Game!</h4>
-                    <h6 class="card-subtitle mb-2 text-muted" id="questionNumber"></h6>
-                    <p class="card-text" id="questionInfo"></p>
                 </div>
             </div>
         </section>
